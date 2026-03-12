@@ -1,1 +1,1 @@
-batata
+print('Olá, mundo')
