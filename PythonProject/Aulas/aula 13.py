@@ -29,4 +29,23 @@
 #     y +=1
 # print('FIM')
 
-#EXERCICIO 50
+#EXERCICIO 52
+# x = 2
+# y = 0
+# z = 0
+# numero = int(input('Digite um número: \n'))
+# if numero == 2:
+#     print(f'O numero {numero} é PRIMO')
+# else:
+#     while x < numero:
+#         y = numero % x
+#         if y == 0:
+#             z = False
+#             break
+#         else:
+#             x = x + 1
+#         z = True
+#     if z == True:
+#         print(f'O numero {numero} é PRIMO')
+#     else:
+#         print(f'O numero {numero} NÃO é PRIMO')
