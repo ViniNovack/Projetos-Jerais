@@ -49,3 +49,5 @@
 #         print(f'O numero {numero} é PRIMO')
 #     else:
 #         print(f'O numero {numero} NÃO é PRIMO')
+
+                              #OR
