@@ -43,4 +43,30 @@
 #         print(f'O fatorial de {n} é {z}')
 # print('FIM')
 
-#EXERCICIO
+#EXERCICIO 63
+# L = []
+# while True:
+#     numero = int(input('Digite a quantidade de numeros de Sequencia de Fibonacci que voce deseja (Escreva 0 para sair): \n'))
+#     if numero == 0:
+#         break
+#     else:
+#         x = 3
+#         v = 0
+#         y = 0
+#         z = 1
+#         L.append(y)
+#         L.append(z)
+#         while x <= numero:
+#             v = y + z
+#             L.append(v)
+#             y = z
+#             z = v
+#             x +=1
+#         print(L)
+# print('FIM')
+
+#EXERCICIO 65
+while True:
+    n = int(input('Digite um numero (Ou 0 para SAIR): \n'))
+    if n == 0:
+        break
