@@ -66,7 +66,24 @@
 # print('FIM')
 
 #EXERCICIO 65
-while True:
-    n = int(input('Digite um numero (Ou 0 para SAIR): \n'))
-    if n == 0:
-        break
+# M = 0
+# W = 0
+# x = 0
+# s = 0
+# while True:
+#     n = int(input('Digite um numero (Ou digite 0 para SAIR): \n'))
+#     if n == 0:
+#         break
+#     else:
+#         s = s + n
+#         x +=1
+#         if x == 1:
+#             M = n
+#             W = n
+#         else:
+#             if n > M:
+#                 M = n
+#             if n < W:
+#                 W = n
+# m = s / x
+# print(f'Voce digitou {x} numeros, portanto a média dos valores é {m}, sendo o maior numero {M} e o menor numero {W}')
