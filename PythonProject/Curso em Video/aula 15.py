@@ -82,3 +82,34 @@
 # print(f'O total da compra é {t}\n{M} produtos tem um valor acima de 1000 reais\nE o produto mais barato é o {b}')
 
 #EXERCICIO 71
+# c = 0
+# v = 0
+# d = 0
+# u = 0
+# while True:
+#     c = 0
+#     v = 0
+#     d = 0
+#     u = 0
+#     n = int(input('Digite o valor que voce quer retirar do banco (Ou 0 para sair): \n'))
+#     if n == 0:
+#         break
+#     else:
+#         if (n - 50) >= 0:
+#             while (n - 50) >= 0:
+#                 n = n - 50
+#                 c +=1
+#         if (n - 20) >= 0:
+#             while (n - 20) >= 0:
+#                 n = n - 20
+#                 v +=1
+#         if (n - 10) >= 0:
+#             while (n - 10) >= 0:
+#                 n = n - 10
+#                 d +=1
+#         if (n - 1) >= 0:
+#             while (n - 1) >= 0:
+#                 n = n - 1
+#                 u +=1
+#         print(f'Voce vai retirar\n{c} de 50\n{v} de 20\n{d} de 10\n{u} de 1')
+# print('FIM')
