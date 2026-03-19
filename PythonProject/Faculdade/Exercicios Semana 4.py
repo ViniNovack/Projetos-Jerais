@@ -21,7 +21,6 @@
 #         elif a =='VOLTAR':
 #             print('Voce continua perdido')
 #             continue
-from idlelib.debugobj import ClassTreeItem
 
 #EXERCICIO 2
 # n = int(input('Digite um número: \n'))
