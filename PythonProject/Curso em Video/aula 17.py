@@ -51,7 +51,7 @@
 #EXERCICIO 79
 L = []
 while True:
-    y = (str(input('Quer digitar numeros? [S/N]')).upper()).strip()
+    y = (str(input('Quer digitar numeros? [S/N] \n')).upper()).strip()
     if y == 'N':
         break
     else:
@@ -60,3 +60,4 @@ while True:
             L.append(n)
         else:
             print('Esse valor já existe na lista!')
+print(f'A sua lista é {L.sort(reverse = True)}')
