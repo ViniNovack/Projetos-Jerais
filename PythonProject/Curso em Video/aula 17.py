@@ -49,16 +49,24 @@
 # print(f'O MENOR valor é {m}')
 
 #EXERCICIO 79
+# L = []
+# while True:
+#     y = (str(input('Quer digitar numeros? [S/N] \n')).upper()).strip()
+#     if y == 'N':
+#         break
+#     else:
+#         n = int(input('Digite um numero: \n'))
+#         if n not in L:
+#             L.append(n)
+#         else:
+#             print('Esse valor já existe na lista!')
+# L.sort()
+# print(f'A sua lista é {L}')
+
+#EXERCICO 80
 L = []
 while True:
-    y = (str(input('Quer digitar numeros? [S/N] \n')).upper()).strip()
-    if y == 'N':
-        break
-    else:
-        n = int(input('Digite um numero: \n'))
-        if n not in L:
-            L.append(n)
-        else:
-            print('Esse valor já existe na lista!')
-L.sort()
-print(f'A sua lista é {L}')
+    n = int(input('Digite um numero: \n'))
+    while x <= 5:
+        if n 
+        x +=1
