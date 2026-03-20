@@ -65,19 +65,24 @@
 
 #EXERCICO 80
 L = []
-y = -1
+y = 1
 while True:
+    y = 1
     n = int(input('Digite um numero: \n'))
     if n == 0:
         break
     elif len(L) == 0:
         L.append(n)
         print(L)
+        continue
     while y <= len(L):
-        if n > L[y]:
-            L.insert(y, n)
+        if n > L[-y]:
+            L.insert(-(y + 1), n)
             print(L)
             break
         else:
             y +=1
+    if n not in L:
+        L.insert(0,n)
+        print(L)
 print(f'FIM, a lista final é {L}')
