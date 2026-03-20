@@ -47,3 +47,8 @@
 #     if ç == m:
 #         print(f'{k + 1}', end='-')
 # print(f'O MENOR valor é {m}')
+
+#EXERCICIO 79
+while True:
+    y = (str(input('Quer digitar numeros? [S/N]')).upper()).strip()
+    
