@@ -49,6 +49,14 @@
 # print(f'O MENOR valor é {m}')
 
 #EXERCICIO 79
+L = []
 while True:
     y = (str(input('Quer digitar numeros? [S/N]')).upper()).strip()
-    
+    if y == 'N':
+        break
+    else:
+        n = int(input('Digite um numero: \n'))
+        if n not in L:
+            L.append(n)
+        else:
+            print('Esse valor já existe na lista!')
