@@ -89,3 +89,11 @@
 # print(f'FIM, a lista final é {L}')
 
 #EXERCICIO 81
+L = []
+while True:
+    n = str(input('Digite um númeor: \n'))
+    if (n.strip()).lower() == 'sair':
+        break
+    else:
+        L.append(int(n))
+print(f'FIM, a lista ficou assim: {L}')
