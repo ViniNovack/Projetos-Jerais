@@ -77,7 +77,11 @@ while True:
         continue
     else:
         while y <= (len(L) - 1):
-            if n > L[-y]:
+            if n > L[len(L) - 1]:
+                L.append(n)
+                print(L)
+                break
+            elif n > L[-y]:
                 L.insert(-y, n)
                 print(L)
                 break
