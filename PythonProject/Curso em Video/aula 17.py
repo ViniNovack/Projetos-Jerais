@@ -89,18 +89,21 @@
 # print(f'FIM, a lista final é {L}')
 
 #EXERCICIO 81
-L = []
-while True:
-    n = str(input('Digite um númeor digite (sair) para finalizar: \n'))
-    if (n.strip()).lower() == 'sair':
-        break
-    else:
-        L.append(int(n))
-        L = L.sort(reverse=True)
-        print(L)
-print(f'FIM, a lista ficou assim: {L}')
-print(f'Foram digitados {len(L)} números!')
-if 5 in L:
-    print('O valor 5 FAZ parte da nlista! \n')
-else:
-    print('O valor 5 NÃO faz parte da lista! \n')
+# L = []
+# while True:
+#     n = str(input('Digite um númeor digite (sair) para finalizar: \n'))
+#     if (n.strip()).lower() == 'sair':
+#         break
+#     else:
+#         L.append(int(n))
+#         L.sort(reverse=True)
+#         print(L)
+# L.sort(reverse=True)
+# print(f'FIM, a lista ficou assim: {L} \n')
+# print(f'Foram digitados {len(L)} números! \n')
+# if 5 in L:
+#     print('O valor 5 FAZ parte da lista! \n')
+# else:
+#     print('O valor 5 NÃO faz parte da lista! \n')
+
+#EXERCICIO 82
