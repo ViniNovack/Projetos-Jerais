@@ -130,7 +130,12 @@
 # print(f'Os números ímpares digitados foram: {I}')
 
 #EXERCICIO 83
-L = []
-e = str(input('Digite a expreção: \n'))
-while True:
-    if e.count('(') == e.count()
+# L = []
+# e = str(input('Digite a expreção: \n'))
+# while True:
+#     if e.count('(') == e.count(')'):
+#         print('Essa espreção esta VALIDA \n')
+#         break
+#     else:
+#         print('Essa expreção esta INVALIDA \n')
+#         break
