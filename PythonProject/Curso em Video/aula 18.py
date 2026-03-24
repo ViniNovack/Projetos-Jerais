@@ -33,3 +33,19 @@
 #         print(f'{p[0]} é menor de idade! \n')
 #         totmen +=1
 # print(f'Temos {totmal} maior e {totmen} menor de idade! \n')
+
+#EXERCICIO 84
+L = []
+U = []
+while True:
+    n = str(input('Digite seu nome(Ou SAIR para finalizar): \n'))
+    if n.lower() == 'sair':
+        break
+    else:
+        i = float(input('Digite seu peso: \n'))
+        U.append(n)
+        U.append(i)
+        L.append(U[:])
+        U.clear()
+print(L)
+print('FIM')
