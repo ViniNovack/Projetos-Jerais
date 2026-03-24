@@ -21,3 +21,4 @@
 # print('Utilização das salas')
 # for x,l in enumerate(lugares_vagos):
 #     print(f'Sala {x + 1} - {l} lugares vazio')
+print('Olá,mundo!')
