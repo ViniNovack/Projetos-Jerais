@@ -92,3 +92,7 @@
 # print(f'Os números INPARES são {L[1]} \n')
 
 #EXERCICIO 86
+matriz = [[], [], []]
+x = 0
+while x < 3:
+    
