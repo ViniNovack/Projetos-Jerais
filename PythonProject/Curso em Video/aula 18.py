@@ -74,3 +74,21 @@
 # print('FIM')
 
 #EXERCICIO 85
+# L = [[], []]
+# while True:
+#     n = int(input('Digite um valor(ou 0 para SAIR): \n'))
+#     if n == 0:
+#         break
+#     else:
+#         if n % 2 == 0:
+#             L[0].append(n)
+#         else:
+#             L[1].append(n)
+#
+# L[0].sort()
+# L[1].sort()
+#
+# print(f'Os números PARES são {L[0]}')
+# print(f'Os números INPARES são {L[1]} \n')
+
+#EXERCICIO 86
