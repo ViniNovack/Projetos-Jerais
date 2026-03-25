@@ -50,29 +50,23 @@ while True:
         L.append(U[:])
         U.clear()
 
-lista_pessoa_menor = []
 peso_menor = L[0][1]
-for pm in L:
-    if pm[1] <= peso_menor:
-        if pm[1] == peso_menor:
-            lista_pessoa_menor.append(pm[0])
-        peso_menor = pm[1]
-        pessoa_menor = pm[0]
-    else:
-        continue
-lista_pessoa_menor.append(pessoa_menor)
-
-lista_pessoa_maior = []
 peso_maior = L[0][1]
-for pM in L:
-    if pM[1] >= peso_maior:
-        if pM[1] == peso_maior:
-            lista_pessoa_maior.append(pM[0])
-        peso_maior = pM[1]
-        pessoa_maior = pM[0]    
-    else:
-        continue
-lista_pessoa_maior.append(pessoa_maior)
+
+for p in L:
+    if p[1] < peso_menor:
+        peso_menor = p[1]
+    if p[1] > peso_maior:
+        peso_maior = p[1]
+
+lista_pessoa_menor = []
+lista_pessoa_maior = []
+
+for p in L:
+    if p[1] == peso_menor:
+        lista_pessoa_menor.append(p[0])
+    if p[1] == peso_maior:
+        lista_pessoa_maior.append(p[0])
 
 print(f'Foram cadastradas {x} pessoas! \n')
 print(f'O MAIOR peso foi de {peso_maior}kg. Da pessoa {lista_pessoa_maior}! \n')
