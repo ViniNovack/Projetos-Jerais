@@ -35,40 +35,42 @@
 # print(f'Temos {totmal} maior e {totmen} menor de idade! \n')
 
 #EXERCICIO 84
-x = 0
-L = []
-U = []
-while True:
-    n = str(input('Digite seu nome(Ou SAIR para finalizar): \n'))
-    if n.lower() == 'sair':
-        break
-    else:
-        x +=1
-        i = float(input('Digite seu peso: \n'))
-        U.append(n)
-        U.append(i)
-        L.append(U[:])
-        U.clear()
+# x = 0
+# L = []
+# U = []
+# while True:
+#     n = str(input('Digite seu nome(Ou SAIR para finalizar): \n'))
+#     if n.lower() == 'sair':
+#         break
+#     else:
+#         x +=1
+#         i = float(input('Digite seu peso: \n'))
+#         U.append(n)
+#         U.append(i)
+#         L.append(U[:])
+#         U.clear()
+#
+# peso_menor = L[0][1]
+# peso_maior = L[0][1]
+#
+# for p in L:
+#     if p[1] < peso_menor:
+#         peso_menor = p[1]
+#     if p[1] > peso_maior:
+#         peso_maior = p[1]
+#
+# lista_pessoa_menor = []
+# lista_pessoa_maior = []
+#
+# for p in L:
+#     if p[1] == peso_menor:
+#         lista_pessoa_menor.append(p[0])
+#     if p[1] == peso_maior:
+#         lista_pessoa_maior.append(p[0])
+#
+# print(f'Foram cadastradas {x} pessoas! \n')
+# print(f'O MAIOR peso foi de {peso_maior}kg. Da pessoa {lista_pessoa_maior}! \n')
+# print(f'O MENOR peso foi de {peso_menor}kg. Da pessoa {lista_pessoa_menor}! \n')
+# print('FIM')
 
-peso_menor = L[0][1]
-peso_maior = L[0][1]
-
-for p in L:
-    if p[1] < peso_menor:
-        peso_menor = p[1]
-    if p[1] > peso_maior:
-        peso_maior = p[1]
-
-lista_pessoa_menor = []
-lista_pessoa_maior = []
-
-for p in L:
-    if p[1] == peso_menor:
-        lista_pessoa_menor.append(p[0])
-    if p[1] == peso_maior:
-        lista_pessoa_maior.append(p[0])
-
-print(f'Foram cadastradas {x} pessoas! \n')
-print(f'O MAIOR peso foi de {peso_maior}kg. Da pessoa {lista_pessoa_maior}! \n')
-print(f'O MENOR peso foi de {peso_menor}kg. Da pessoa {lista_pessoa_menor}! \n')
-print('FIM')
+#EXERCICIO 85
