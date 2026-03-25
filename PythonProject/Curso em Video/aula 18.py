@@ -92,7 +92,7 @@
 # print(f'Os números INPARES são {L[1]} \n')
 
 #EXERCICIO 86
-M = [[], [], []]
+M = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
 for c in range(0, 3):
     for p in M:
         n = int(input(f'Digite o valor de [{}, {}]'))
