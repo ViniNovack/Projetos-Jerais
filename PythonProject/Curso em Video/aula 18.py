@@ -92,11 +92,13 @@
 # print(f'Os números INPARES são {L[1]} \n')
 
 #EXERCICIO 86
-M = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
-for l in range(0, 3):
-    for c in range(0, 3):
-        n = int(input(f'Digite o valor de [{l}, {c}] \n'))
-        M[l][c] = n
-print('=-'*30)
-print(f'{M[0]}\n{M[1]}\n{M[2]}')
-print('=-'*30)
+# M = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+# for l in range(0, 3):
+#     for c in range(0, 3):
+#         M[c][l] = int(input(f'Digite um valor na posição de [{l}, {c}] \n'))
+# print('=-'*30)
+# for c in range(0, 3):
+#     for l in range(0, 3):
+#         print(f'[{M[l][c]}]', end='')
+#     print()
+# print('=-'*30)
