@@ -139,7 +139,7 @@
 # print(f'O maior valor da segunda coluna é {ma} \n')
 
 #EXERCICIO 88
-import random
+# import random
 # L = []
 # j = int(input('Digite o número de jogos que voce quer gerar: \n'))
 # x = 1
@@ -160,3 +160,23 @@ import random
 # print('FIM')
 
 #EXERCICIO 89
+L = []
+U = []
+y = 1
+x = int(input('Digite o número de notas que voce quer registrar para cada aluno: \n'))
+while True:
+    a = str(input('Digite o nome do aluno(ou "SAIR" para finalizar) \n'))
+    if (a.lower()).strip() == 'sair':
+        break
+    else:
+        U.append(a)
+        while y <= x:
+            n = float(input(f'Digite a nota do aluno {a}: \n'))
+            U.append(n)
+            y += 1
+        L.append(U[:])
+        U.clear()
+        y = 1
+print('=-'*30)
+for p in L:
+    
