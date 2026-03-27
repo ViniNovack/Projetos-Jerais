@@ -208,30 +208,29 @@
 # print('FIM')
 
 #EXERCICIO EXTRA
-C = []
-for k in range(0,2):
-    c = int(input('Digite a medida da MATRIZ: \n'))
-    C.append(c)
-
-L = []
-M = []
-x = 1
-y = 1
-while y <= C[1]:
-    x = 1
-    while x <= C[0]:
-        M.append(0)
-        x +=1
-    L.append(M[:])
-    M.clear()
-    y +=1
-
-for l in L:
-    for c in l:
-        M[l][c] = int(input(f'Digite um valor para a cordenada [{l}, {c}]: \n'))
-        c.append(M[l][c])
-
-for l in L:
-    for c in l:
-        print(f'{L[l][c]}', end='')
-    print()
+# C = []
+# for k in range(0,2):
+#     c = int(input('Digite a medida da MATRIZ: \n'))
+#     C.append(c)
+#
+# L = []
+# M = []
+# x = 1
+# y = 1
+# while y <= C[1]:
+#     x = 1
+#     while x <= C[0]:
+#         M.append(0)
+#         x +=1
+#     L.append(M[:])
+#     M.clear()
+#     y +=1
+#
+# for l in range(0, C[0]):
+#     for c in range(0, C[1]):
+#         L[l][c] = int(input(f'Digite um valor para a cordenada [{l}, {c}]: \n'))
+#
+# for l in range(0, C[0]):
+#     for c in range(0, C[1]):
+#         print(f'[{L[l][c]}]', end='')
+#     print()
