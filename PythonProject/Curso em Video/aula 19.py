@@ -20,3 +20,25 @@
 # print(locadora[0]['titulo'])
 
 #EXEMPLO 4
+# brasil = []
+# estado1 = {'uf': 'Rio de Janeiro', 'sigla': 'RJ'}
+# estado2 = {'uf': 'São Paulo', 'sigla': 'SP'}
+# brasil.append(estado1)
+# brasil.append(estado2)
+# print(brasil[0]['uf'])
+# print(brasil[1]['uf'])
+
+#EXEMPLO 5
+# estado = {}
+# brasil = []
+# for c in range(0, 3):
+#     estado['uf'] = str(input('Unidade Federativa: \n'))
+#     estado['sigla'] = str(input('Sigla do Estado: \n'))
+#     brasil.append(estado.copy())
+# for e in brasil:
+#     for v in e.values():
+#         print(v, end=' ')
+#     print()
+
+#___________________________________________________________________________________________________________________________________________________________
+#EXERCICIO 1
