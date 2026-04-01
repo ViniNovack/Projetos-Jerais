@@ -218,3 +218,34 @@
 # print(f'As pessoas com idade acima da média são: {L} \n')
 
 #EXERCICIO 95
+G = []
+D = {}
+while True:
+    print('=-'*30)
+    nome = str(input('Digite o nome do jogador (ou "SAIR" para terminar o cadastro): \n'))
+    if (nome.lower()).strip() == 'sair':
+        break
+    else:
+        D[f'{nome}'] = {}
+        
+        partidas = int(input(f'Quantas partidas o jogador {nome} jogou? \n'))
+        for c in range(1, (partidas +1)):
+            D[f'{nome}'][f'Partida {c}'] = int(input(f'Quantos gols o {nome} fez na partida {c}? \n'))
+            G.append(D[f'{nome}'][f'Partida {c}'])
+
+print('=-'*30)
+print('JOGADORES',           'GOLS',                'TOTAL')
+print('-'*30)
+for k in D:
+    print(f'{k}           {G}            {sum(G)}')
+print('-'*30)
+
+while True:
+    h = str(input('Voce quer as expecificações de qual jogador (ou "SAIR" para finalizar o programa)? \n'))
+    if (h.lower()).strip() == 'sair':
+        break
+    else:
+        
+print('=-'*30)
+print('FIM')
+print('=-'*30)
