@@ -111,3 +111,35 @@
 # print('FIM')
 
 #EXERCICIO 92
+# from datetime import date, datetime
+# D = {}
+# c = 1
+# while True:
+#     print('=-'*30)
+#     f = str(input('Digite o nome do funcionário (ou "SAIR" para fanalizar o programa): \n'))
+#     if (f.lower()).strip() == 'sair':
+#         break
+#     else:
+#         D[f'funcionario {c}'] = f
+#         ano = int(input('Digite o seu ano de nacimento: \n'))
+#         D['ano de nacimento'] = ano
+#         carteira = int(input('Digite o número da sua carteira de trabalho (ou 0 caso não tenha): \n'))
+#         if carteira == 0:
+#             print('=-'*30)
+#             print(f'O funcionário {D[f'funcionario {c}']}\nTem {date.today().year - D['ano de nacimento']} anos\nNão TEM carteira de trabalho')
+#             c +=1
+#             continue
+#         else:
+#             D['carteira de trabalho'] = carteira
+#             ano_contratação = int(input('Digite o ano de contratação: \n'))
+#             D['ano de contratação'] = ano_contratação
+#             salario = float(input('Digite seu salário: \n'))
+#             D['salario'] = salario
+#             print('=-'*30)
+#             print(f'O funcionário {D[f'funcionario {c}']}\nTem {date.today().year - D['ano de nacimento']} anos\nSua CTPS tem valor {D['carteira de trabalho']}\nFoi contratado em {D['ano de contratação']}\nSalário é igual a {D['salario']}\nVai se aposentar com {D['ano de contratação'] + 45 - D['ano de nacimento']} anos')
+#     D.clear()
+# print('=-'*30)
+# print('FIM')
+# print('=-'*30)
+
+#EXERCICIO 93
