@@ -65,9 +65,12 @@
 
 #EXERCICIO 91
 import random
+U = []
+L = []
 D = {}
 CR = 1
 CJ = 1
+p = 1
 while True:
     print('=-'*30)
     print(F'RODADA {CR}')
@@ -83,11 +86,22 @@ while True:
             print('TENTE DE NOVO')
             print('=-'*30)
             continue
+    for k, v in D.items():
+        U.append(v)
+        U.append(k)
+        L.append(U[:])
+        U.clear()
+    L.sort()
+    for i in L:
+        print(f'{p}º Lugar: {i[1]} fez {i[0]} pontos')
+        p +=1 
     print('=-'*30)
     r = str(input('Quer jogar mais uma rodade? (Y/N) \n'))
+    print('=-'*30)
     if (r.lower()).strip() == 'y':
         CR +=1
         CJ = 1
+        p = 1
         D.clear()
         continue
     else:
