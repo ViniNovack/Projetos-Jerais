@@ -178,3 +178,43 @@
 # print('=-'*30)
 
 #EXERCICIO 94
+# D = {}
+# q = 0
+# while True:
+#     print('=-'*30)
+#     nome = str(input('Cadastre o nome da pessoa (ou "SAIR" para finalizar o programa): \n'))
+#     if (nome.lower()).strip() == 'sair':
+#         break
+#     else:
+#         D[f'{nome}'] = {}
+#         sexo = str(input('Digite o seu sexo (M/F): \n'))
+#         D[f'{nome}']['sexo'] = sexo
+#         idade = int(input('Digite a sua idade: \n'))
+#         D[f'{nome}']['idade'] = idade
+#         q +=1
+
+# print('=-'*30)
+
+# print(f'Foram cadastradas {q} pessoas \n')
+
+# s = 0
+# for k in D:
+#     s = s + D[k]['idade']
+# M = s / q
+# print(f'A média de todas as idades é igual a {M:.2f} anos \n')
+
+# m = 0
+# MM = []
+# for k in D:
+#     if D[k]['sexo'].lower() == 'f':
+#         MM.append(k)
+#         m +=1
+# print(f'Foram cadastradas {m} mulheres, sendo elas: {MM} \n')
+
+# L = []
+# for k in D:
+#     if D[k]['idade'] > M:
+#         L.append(k)
+# print(f'As pessoas com idade acima da média são: {L} \n')
+
+#EXERCICIO 95
