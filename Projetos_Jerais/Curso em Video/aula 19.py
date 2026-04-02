@@ -218,7 +218,6 @@
 # print(f'As pessoas com idade acima da média são: {L} \n')
 
 #EXERCICIO 95
-G = []
 D = {}
 while True:
     print('=-'*30)
@@ -231,21 +230,31 @@ while True:
         partidas = int(input(f'Quantas partidas o jogador {nome} jogou? \n'))
         for c in range(1, (partidas +1)):
             D[f'{nome}'][f'Partida {c}'] = int(input(f'Quantos gols o {nome} fez na partida {c}? \n'))
-            G.append(D[f'{nome}'][f'Partida {c}'])
 
-print('=-'*30)
-print('JOGADORES',           'GOLS',                'TOTAL')
-print('-'*30)
+print('=-'*50)
+print('JOGADORES'.ljust(15), 'GOLS'.center(20), 'TOTAL'.rjust(10))
+print('-'*50)
+
 for k in D:
-    print(f'{k}           {G}            {sum(G)}')
-print('-'*30)
+    print(f'{k}'.ljust(15), f'{list(D[k].values())}'.center(20), f'{sum(D[k].values())}'.rjust(10))
+print('-'*50)
 
 while True:
     h = str(input('Voce quer as expecificações de qual jogador (ou "SAIR" para finalizar o programa)? \n'))
     if (h.lower()).strip() == 'sair':
         break
+    elif h not in D.keys():
+        print('Esse jogador é invalido, tente novamente: \n')
+        continue 
     else:
-        
+        print(f'LEVANTAMENTO DO JOGADOR {h}')
+        for k in D:
+            if k == h:
+                for y, v in D[k].items():
+                    print(f'Na {y} ele fez {v} gols')
+                break
+            else:
+                continue
 print('=-'*30)
 print('FIM')
 print('=-'*30)
