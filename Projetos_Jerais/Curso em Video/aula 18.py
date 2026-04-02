@@ -91,17 +91,17 @@
 # print(f'Os números PARES são {L[0]}')
 # print(f'Os números INPARES são {L[1]} \n')
 
-#EXERCICIO 86
-# M = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
-# for l in range(0, 3):
-#     for c in range(0, 3):
-#         M[c][l] = int(input(f'Digite um valor na posição de [{l}, {c}] \n'))
-# print('=-'*30)
-# for c in range(0, 3):
-#     for l in range(0, 3):
-#         print(f'[{M[l][c]}]', end='')
-#     print()
-# print('=-'*30)
+#EXERCICIO 86                                                                     MATRIZ
+M = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+for l in range(0, 3):
+    for c in range(0, 3):
+        M[c][l] = int(input(f'Digite um valor na posição de [{l}, {c}] \n'))
+print('=-'*30)
+for c in range(0, 3):
+    for l in range(0, 3):
+        print(f'[{M[l][c]}]', end='')
+    print()
+print('=-'*30)
 
 #EXERCICIO 87
 # M = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
