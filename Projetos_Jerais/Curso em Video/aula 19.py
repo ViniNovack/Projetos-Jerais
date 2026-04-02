@@ -1,10 +1,10 @@
-#EXEMPLO 1
+# #EXEMPLO 1
 # dados = {}
 # dados = {'nome': 'Pedro', 'idade': 25}
 # dados ['sexo'] = 'M'
 # print(dados['sexo'])
 
-#EXEMPLO 2
+# #EXEMPLO 2
 # filme = {'titulo': 'star wars', 'ano': 1977, 'diretor': 'George Lucas'}
 # print(filme.values())
 # print(filme.keys())
@@ -12,14 +12,14 @@
 # for k, v in filme.items():
 #     print(f'O {k} é {v}')
 
-#EXEMPLO 3
+# #EXEMPLO 3
 # filme1 = {'titulo': 'star wars', 'ano': '1977', 'diretor': 'George Lucas'}
 # filme2 = {'titulo': 'avengers', 'ano': '2012', 'diretor': 'Joss Whedon'}
 # filme3 = {'titulo': 'matrix', 'ano': '1999', 'diretor': 'Wachowski'}
 # locadora = [filme1, filme2, filme3]
 # print(locadora[0]['titulo'])
 
-#EXEMPLO 4
+# #EXEMPLO 4
 # brasil = []
 # estado1 = {'uf': 'Rio de Janeiro', 'sigla': 'RJ'}
 # estado2 = {'uf': 'São Paulo', 'sigla': 'SP'}
@@ -28,7 +28,7 @@
 # print(brasil[0]['uf'])
 # print(brasil[1]['uf'])
 
-#EXEMPLO 5
+# #EXEMPLO 5
 # estado = {}
 # brasil = []
 # for c in range(0, 3):
@@ -40,8 +40,8 @@
 #         print(v, end=' ')
 #     print()
 
-#___________________________________________________________________________________________________________________________________________________________
-#EXERCICIO 90
+# #___________________________________________________________________________________________________________________________________________________________
+# #EXERCICIO 90
 # D = {}
 # while True:
 #     D.clear()
@@ -63,7 +63,7 @@
 # print('=-'*30)
 # print('FIM')
 
-#EXERCICIO 91
+# #EXERCICIO 91
 # import random
 # U = []
 # L = []
@@ -110,7 +110,7 @@
 #         break
 # print('FIM')
 
-#EXERCICIO 92
+# #EXERCICIO 92
 # from datetime import date, datetime
 # D = {}
 # c = 1
@@ -142,7 +142,7 @@
 # print('FIM')
 # print('=-'*30)
 
-#EXERCICIO 93
+# #EXERCICIO 93
 # G = []
 # D = {}
 # while True:
@@ -177,7 +177,7 @@
 # print('FIM')
 # print('=-'*30)
 
-#EXERCICIO 94
+# #EXERCICIO 94
 # D = {}
 # q = 0
 # while True:
@@ -217,44 +217,44 @@
 #         L.append(k)
 # print(f'As pessoas com idade acima da média são: {L} \n')
 
-#EXERCICIO 95
-D = {}
-while True:
-    print('=-'*30)
-    nome = str(input('Digite o nome do jogador (ou "SAIR" para terminar o cadastro): \n'))
-    if (nome.lower()).strip() == 'sair':
-        break
-    else:
-        D[f'{nome}'] = {}
+# #EXERCICIO 95
+# D = {}
+# while True:
+#     print('=-'*30)
+#     nome = str(input('Digite o nome do jogador (ou "SAIR" para terminar o cadastro): \n'))
+#     if (nome.lower()).strip() == 'sair':
+#         break
+#     else:
+#         D[f'{nome}'] = {}
         
-        partidas = int(input(f'Quantas partidas o jogador {nome} jogou? \n'))
-        for c in range(1, (partidas +1)):
-            D[f'{nome}'][f'Partida {c}'] = int(input(f'Quantos gols o {nome} fez na partida {c}? \n'))
+#         partidas = int(input(f'Quantas partidas o jogador {nome} jogou? \n'))
+#         for c in range(1, (partidas +1)):
+#             D[f'{nome}'][f'Partida {c}'] = int(input(f'Quantos gols o {nome} fez na partida {c}? \n'))
 
-print('=-'*50)
-print('JOGADORES'.ljust(15), 'GOLS'.center(20), 'TOTAL'.rjust(10))
-print('-'*50)
+# print('=-'*50)
+# print('JOGADORES'.ljust(15), 'GOLS'.center(20), 'TOTAL'.rjust(10))
+# print('-'*50)
 
-for k in D:
-    print(f'{k}'.ljust(15), f'{list(D[k].values())}'.center(20), f'{sum(D[k].values())}'.rjust(10))
-print('-'*50)
+# for k in D:
+#     print(f'{k}'.ljust(15), f'{list(D[k].values())}'.center(20), f'{sum(D[k].values())}'.rjust(10))
+# print('-'*50)
 
-while True:
-    h = str(input('Voce quer as expecificações de qual jogador (ou "SAIR" para finalizar o programa)? \n'))
-    if (h.lower()).strip() == 'sair':
-        break
-    elif h not in D.keys():
-        print('Esse jogador é invalido, tente novamente: \n')
-        continue 
-    else:
-        print(f'LEVANTAMENTO DO JOGADOR {h}')
-        for k in D:
-            if k == h:
-                for y, v in D[k].items():
-                    print(f'Na {y} ele fez {v} gols')
-                break
-            else:
-                continue
-print('=-'*30)
-print('FIM')
-print('=-'*30)
+# while True:
+#     h = str(input('Voce quer as expecificações de qual jogador (ou "SAIR" para finalizar o programa)? \n'))
+#     if (h.lower()).strip() == 'sair':
+#         break
+#     elif h not in D.keys():
+#         print('Esse jogador é invalido, tente novamente: \n')
+#         continue 
+#     else:
+#         print(f'LEVANTAMENTO DO JOGADOR {h}')
+#         for k in D:
+#             if k == h:
+#                 for y, v in D[k].items():
+#                     print(f'Na {y} ele fez {v} gols')
+#                 break
+#             else:
+#                 continue
+# print('=-'*30)
+# print('FIM')
+# print('=-'*30)
