@@ -115,14 +115,13 @@
 # print('Agora é sua vez:')
 # time.sleep(0.5)
 # ini = int(input('Início: \n'))
-# ini = abs(ini)
 # fim = int(input('Fim: \n'))
-# fim = abs(fim)
 # pas = int(input('Passo: \n'))
-# pas = abs(pas)
-# print('=-'*30)
 # if pas == 0:
 #     pas = 1
+# pas = abs(pas)
+# print('=-'*30)
+
 # if ini < fim:
 #     for c in range(ini, (fim + 1), pas):
 #         print(f'{c}')
