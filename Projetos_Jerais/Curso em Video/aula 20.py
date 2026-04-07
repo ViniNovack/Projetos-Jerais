@@ -96,3 +96,43 @@
 # print('FIM')
 
 #EXERCICIO 98
+# import time
+# print('=-'*30)
+# print('Contagem de 1 até 10 de 1 em 1: ')
+# for c in range(1, 11):
+#     print(f'{c}')
+#     time.sleep(0.5)
+# print('FIM')
+
+# print('=-'*30)
+# print('Contagem de 10 até 0 de 2 em 2: ')
+# for c in range(10, -1, -2):
+#     print(f'{c}')
+#     time.sleep(0.5)
+# print('FIM')
+# print('=-'*30)
+
+# print('Agora é sua vez:')
+# time.sleep(0.5)
+# ini = int(input('Início: \n'))
+# ini = abs(ini)
+# fim = int(input('Fim: \n'))
+# fim = abs(fim)
+# pas = int(input('Passo: \n'))
+# pas = abs(pas)
+# print('=-'*30)
+# if pas == 0:
+#     pas = 1
+# if ini < fim:
+#     for c in range(ini, (fim + 1), pas):
+#         print(f'{c}')
+#         time.sleep(0.5)
+#     print('FIM')
+# if ini > fim:
+#     for c in range(ini, (fim - 1), -pas):
+#         print(f'{c}')
+#         time.sleep(0.5)
+#     print('FIM')
+# print('=-'*30)
+
+#EXERCICIO 99
