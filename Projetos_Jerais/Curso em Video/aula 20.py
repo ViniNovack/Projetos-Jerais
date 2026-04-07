@@ -154,3 +154,43 @@
 # maior(*L)
 
 #EXERCICIO 100
+# import random
+# import time
+
+# def sortear(lst):
+#     for c in range(0, 5):
+#         x = random.randrange(1, 21)
+#         if x not in lst:
+#             lst.append(x)
+#         else:
+#             continue
+
+# def somapar(lst):
+#     s = 0
+#     for c in lst:
+#         if c % 2 == 0:
+#             s = s + c
+#         else:
+#             continue
+#     lst.clear()
+#     lst.append(s)
+
+# par = []
+# numeros = []
+# sortear(numeros)
+# print('=-'*30)
+# print('Sorteando numeros: ')
+# for c in numeros:
+#     print(c)
+#     time.sleep(0.6)
+
+# for c in numeros:
+#     if c % 2 == 0:
+#         par.append(c)
+#     else:
+#         continue
+
+# print(f'Soma dos valores pares {par}: ')
+# somapar(numeros)
+# print(numeros)
+# print('=-'*30)
