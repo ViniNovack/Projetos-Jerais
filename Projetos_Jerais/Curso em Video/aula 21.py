@@ -44,4 +44,27 @@
 # else:
 #     print('É IMPAR!')
 
-# EXERCICIO 101
+# EXERCICIO 101                                              !!!!!!!!!!!!!!!!!!!!!!!!!!!!(VER RESOLUÇÃO DO EXERCICIO)!!!!!!!!!!!!!!!!!!!!!!
+# import datetime
+# def voto(ano):
+#     atual = datetime.date.today().year
+#     idade = atual - ano
+#     if idade < 16:
+#         return f'Com {idade} anos: NÃO VOTA.'
+#     elif 16 <= idade < 18 or idade > 65:
+#         return f'Com {idade} anos: VOTO OPCIONAL.'
+#     else:
+#         return f'Com {idade} anos: VOTO OBRIGATÓRIO.'
+
+
+# while True:
+#     nasc = int(input('Em que ano você nasceu? (ou digite 0 para SAIR)\n'))
+#     if nasc == 0:
+#         break
+#     else:
+#         print(voto(nasc))
+
+# print('=-'*30)
+# print('FIM')
+
+# EXERCICIO 102
