@@ -83,18 +83,101 @@
 
 # fatorial(10, True)
 
-#EXERCICIO 103
-def ficha(nome='<desconhacido>', gols=0):
-    print(f'O jogador {nome} fez {gols} gol(s) no campeonato.')
+# EXERCICIO 103
+# def ficha(nome='<desconhacido>', gols=0):
+#     print(f'O jogador {nome} fez {gols} gol(s) no campeonato.')
 
-n = str(input('Nome do Jogador: \n'))
-g = str(input('Número de Gols: \n'))
+# n = str(input('Nome do Jogador: \n'))
+# g = str(input('Número de Gols: \n'))
 
-if g.isnumeric():
-    g = int(g)
-else:
-    g = ''
-if n.strip() == '':
-    ficha(gols=g)
-else:
-    ficha(n, g)
+# if g.isnumeric():
+#     g = int(g)
+# else:
+#     g = 0
+
+# if n.strip() == '':
+#     ficha(gols=g)
+# else:
+#     ficha(n, g)
+
+# EXERCICIO 104
+# def leiaInt():
+#     while True:
+#         m = str(input('Digite um número: '))
+#         if m.isnumeric():
+#             m = int(m)
+#             return m
+#             break
+#         else:
+#             print('ERRO! Digite um número inteiro válido.')
+#             continue
+
+# n = leiaInt()
+# print(f'Você digitou o número {n}!!!')
+
+# EXERCICIO 105
+# def notas(*n, sit=False):
+#     D = {}
+#     mm = 0
+#     me = n[0]
+#     med = 0
+#     cont = 0
+#     s = 0
+
+#     for c in n:
+#         if c > mm:
+#             mm = c
+#         elif c < me:
+#             me = c
+#     for c in n:
+#         s +=c
+#         cont +=1
+#     med = s / cont
+
+#     D['TOTAL'] = cont
+#     D['MAIOR'] = mm
+#     D['MENOR'] = me
+#     D['MÉDIA'] = med
+
+#     if sit == True:
+#         if med < 7:
+#             D['Situação'] = 'Ruim'
+#         elif 7 <= med < 8:
+#             D['Situação'] = 'Médio'
+#         elif med >= 8:
+#             D['Situação'] = 'Boa'
+    
+#     return D
+
+# n = notas(7, 8, 8, 9, 6, 5, 8, 7, 7, 10, sit=True)
+# print(n)
+
+# EXERCICIO 106
+from time import sleep
+
+FUNDO_AZUL = "\033[47m"
+FUNDO_AZUL = "\033[44m"
+FUNDO_VERDE = "\033[42m"
+TEXTO_PRETO = "\033[30m"
+LIMPA_LINHA = "\033[K"
+RESET = "\033[0m"
+
+print(f'{FUNDO_VERDE}{TEXTO_PRETO}~{LIMPA_LINHA}{RESET}'*50)
+print(f'{FUNDO_VERDE}{TEXTO_PRETO}           SISTEMA DE AJUDA PyHELP{LIMPA_LINHA}{RESET}')
+print(f'{FUNDO_VERDE}{TEXTO_PRETO}~{LIMPA_LINHA}{RESET}'*50)
+sleep(0.5)
+
+while True:
+    f = str(input('Função ou Biblioteca > '))
+    if (f.lower()).strip() == 'sair':
+        break
+    else:
+        print(f'{FUNDO_AZUL}{TEXTO_PRETO}~{LIMPA_LINHA}{RESET}'*50)
+        print(f'{FUNDO_AZUL}{TEXTO_PRETO}           Acessando o Manual do comando{LIMPA_LINHA}{RESET}')
+        print(f'{FUNDO_AZUL}{TEXTO_PRETO}~{LIMPA_LINHA}{RESET}'*50)
+        sleep(0.5)
+        print(f'{FUNDO_AZUL}{TEXTO_PRETO}{help(f)}{LIMPA_LINHA}{RESET}')
+        continue
+
+print('=-'*30)
+print('FIM')

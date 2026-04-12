@@ -1,11 +1,9 @@
-#Testes exercicio 91
-# L = [[1,'v'], [8,'f'], [3,'g']]
-# L.sort()
-# print(L)
+# Códigos ANSI
+FUNDO_AMARELO = "\033[43m"
+TEXTO_PRETO = "\033[30m"
+LIMPA_LINHA = "\033[K"
+RESET = "\033[0m"
 
-#Testes exercicio 92
-# L = [1 ,2, 3, 4, 5]
-# total = sum(L)
-# print(total)
-
-print('Olá, mundo !!!')
+# Destacando a linha toda
+print(f"{FUNDO_AMARELO}{TEXTO_PRETO}Esta linha está totalmente destacada!{LIMPA_LINHA}{RESET}")
+print("Esta é uma linha normal abaixo.")
