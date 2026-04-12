@@ -90,12 +90,5 @@ def ficha(nome='<desconhacido>', gols=0):
 n = str(input('Nome do Jogador: \n'))
 g = str(input('Número de Gols: \n'))
 
-if g.isnumeric():
-    g = int(g)
-else:
-    g = 0
-
 if n.strip() == '':
-    ficha(gols=g)
-else:
     ficha(n, g)
