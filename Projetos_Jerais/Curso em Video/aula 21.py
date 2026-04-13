@@ -155,12 +155,13 @@
 # EXERCICIO 106
 from time import sleep
 
-FUNDO_AZUL = "\033[47m"
+FUNDO_BRANCO = "\033[47m"
 FUNDO_AZUL = "\033[44m"
 FUNDO_VERDE = "\033[42m"
 TEXTO_PRETO = "\033[30m"
 LIMPA_LINHA = "\033[K"
 RESET = "\033[0m"
+SEM_CORES = '\033[m',
 
 print(f'{FUNDO_VERDE}{TEXTO_PRETO}~{LIMPA_LINHA}{RESET}'*50)
 print(f'{FUNDO_VERDE}{TEXTO_PRETO}           SISTEMA DE AJUDA PyHELP{LIMPA_LINHA}{RESET}')
@@ -176,7 +177,9 @@ while True:
         print(f'{FUNDO_AZUL}{TEXTO_PRETO}           Acessando o Manual do comando{LIMPA_LINHA}{RESET}')
         print(f'{FUNDO_AZUL}{TEXTO_PRETO}~{LIMPA_LINHA}{RESET}'*50)
         sleep(0.5)
-        print(f'{FUNDO_AZUL}{TEXTO_PRETO}{help(f)}{LIMPA_LINHA}{RESET}')
+        print(f'{FUNDO_BRANCO}{TEXTO_PRETO}')
+        help(f)
+        print(f'{SEM_CORES}')
         continue
 
 print('=-'*30)
